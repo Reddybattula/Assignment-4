@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 960px;
+        margin: 20px auto;
+    
+    
+}
+div, nav ul, section,  footer, a {
+    background: silver;
+}    
+.main1{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 70px;
+    grid-template-areas:
+        "logoimg .    navigation navigation";
+        
+}    
+nav {
+    grid-area: navigation;
+    align-self: center;
+}
+nav ul {
+    display: grid;
+    height: 40px;
+    grid-template: auto / repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.image {
+    grid-area: imgsec;
+}
+.prod1 {
+    grid-area: p1;
+}
+.prod2 {
+    grid-area: p2;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+div {
+    grid-area: logoimg;
+}
+footer {
+    grid-area: footer;
+    text-align: center;
+    align-content: center;			
+}
+.main2 {
+    display: grid;
+grid-gap: 15px;
+grid-template-columns: 1fr, 1fr, 1fr;
+grid-template-rows: 200px 150px 150px 150px 60px;
+grid-template-areas:
+"hed hed hed"
+"s1 s2 s3"
+"s4 s5 s6"
+"s7 s8 s9"
+"footer footer footer";
+
+}
+.sec1{
+    grid-area: s1;
+}
+.sec2{
+    grid-area: s2;
+}
+.sec3{
+    grid-area: s3;
+}
+.sec4{
+    grid-area: s4;
+}
+.sec5{
+    grid-area: s5;
+}
+.sec6{
+    grid-area: s6;
+}
+.sec7{
+    grid-area: s7;
+}
+.sec8{
+    grid-area: s8;
+}
+.sec9{
+    grid-area: s9;
+}
+
+header {
+    grid-area: hed;
+    margin-bottom: 20px;
+}
